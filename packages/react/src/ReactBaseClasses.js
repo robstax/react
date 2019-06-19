@@ -56,6 +56,7 @@ Component.prototype.isReactComponent = {};
  * @protected
  */
 Component.prototype.setState = function(partialState, callback) {
+  console.error('@@ RS FORK');
   invariant(
     typeof partialState === 'object' ||
       typeof partialState === 'function' ||
